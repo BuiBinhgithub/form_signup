@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form sign up</title>
+    <link rel="stylesheet" href="./css/index.css">
+
+<body>
+    <!------------------ SIDEBAR --------------->
+    <aside class="sidebar">
+    </aside>
+    <!-- -------------------CONTENT---------------- -->
+    <div class="content">
+        <div class="wrapper">
+            <header class="header">
+                <img src="./image/e130fe2b3d5f781f76adb208ccaad855.png" alt="logo">
+                <div class="header_signin">
+                    <p>Bạn đã có tài khoản?</p>
+                    <button class="header_button">Đăng nhập</button>
+                </div>
+            </header>
+            <!-- --------------------------------- -->
+            <form class="form-container">
+                <h3 class="form-title">Đăng ký Kỹ Thuật viên</h3>
+                <h5 class="form-description">Thông tin cá nhân</h5>
+                <div class="input-row_top">
+                    <!-- ----------------input-top----------------- -->
+                    <div class="input-group">
+                        <label class="form-label"><span>*</span> Họ và Tên</label>
+                        <input class="form-input" type="text" name="name-label" required placeholder="Nhập tên" />
+                        <label class="form-label"><span>*</span> Email</label>
+                        <input class="form-input" type="email" name="email-label" required placeholder="Nhập email" />
+                    </div>
+                    <!-- --------------------------------- -->
+                    <div class="input-group">
+                        <label class="form-label"><span>*</span> Ngày sinh</label>
+                        <input class="form-input" type="date" name="date-label" required />
+                        <label class="form-label"><span>*</span> Số CMND/CCCD</label>
+                        <input class="form-input" type="text" name="number-label" required
+                            placeholder="Nhập số CMND/CCCD" />
+                    </div>
+                    <!-- --------------------------------- -->
+                    <div class="input-group">
+                        <label class="form-label"><span>*</span> Số điện thoại</label>
+                        <div class="phone-input">
+                            <span class="country-icon">
+                                <img src="./image/vietnam.png" alt="vietnam" class="form-img_national">
+                            </span>
+                            <select class="country-code">
+                                <option selected>+84</option>
+                                <!-- Các tùy chọn mã vùng khác -->
+                            </select>
+                            <input class="form-input phone-number" type="tel" name="phone" required
+                                placeholder="Nhập số Điện thoại" />
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------input-below------------------ -->
+                <div class="input-row_below">
+                    <div class="input-group_below">
+                        <label class="form-label"><span>*</span> Địa chỉ</label>
+                        <select name="" class="form-select" id="">
+                            <option disabled selected value>Tỉnh/Thành phố, Quận/Huyện, Phường/Xã</option>
+                        </select>
+                        <label class="form-label"><span>*</span> Chuyên môn</label>
+                        <select name="" class="form-select" id="">
+                            <option disabled selected value>Nhập để tìm chọn loại chuyên môn</option>
+                        </select>
+                    </div>
+                    <div class="input-group_below">
+                        <label class="form-label"></label>
+                        <input class="form-input" type="text" name="name-label" required
+                            placeholder="Tên đường, Tòa nhà, Số nhà" />
+                        <label class="form-label"> Trình độ học vấn</label>
+                        <select name="" class="form-select" id="">
+                            <option disabled selected value>Nhập để tìm chọn loại chuyên môn</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- -------------------------------------- -->
+                <div class="input-payment">
+                    <h5 class="form-description_payment">Thông tin thanh toán</h5>
+                    <div class="input-row_payment">
+                        <div class="input-group_payment">
+                            <label class="form-label_payment"><span>*</span> Ngân hàng</label>
+                            <select name="" class="form-select" id="">
+                                <option disabled selected value>Nhập để tìm chọn ngân hàng</option>
+                            </select>
+                        </div>
+                        <div class="input-group_payment">
+                            <label class="form-label_payment"><span>*</span> Số thẻ</label>
+                            <select name="" class="form-select" id="">
+                                <option disabled selected value> Nhập số thẻ</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- ---------------------Footer------------------>
+        <footer class="footer">
+            <button type="submit" class="footer-button reset">Làm lại</button>
+            <button type="submit" disabled class="footer-button next">Tiếp theo</button>
+        </footer>
+    </div>
+</body>
+
+</html>
