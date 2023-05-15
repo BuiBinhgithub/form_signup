@@ -6,7 +6,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-span {
+strong {
     color: #D63120;
 }
 
@@ -211,6 +211,3 @@ input {
     background-color: #FFEFC4;
     margin-right: 24px;
 }
-
-
-/* responsive */
